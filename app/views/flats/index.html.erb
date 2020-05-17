@@ -4,8 +4,9 @@
     <h4><%= flat.name %></h4>
     <p><%= flat.address %></p>
     <div class="flex-box">
-      <p><%= "#{flat.number_of_guests} pax" %></p>
-      <p><%= "$#{flat.price_per_night} per night" %></p>
+      <p><i class="material-icons">person</i><%= "#{flat.number_of_guests}" %></p>
+      <p><i class="material-icons">attach_money</i> <%= "#{flat.price_per_night}" %></p>
     </div>
+    <p><%= link_to "More info", flat_path(flat) %></p>
   </div>
 <% end %>
