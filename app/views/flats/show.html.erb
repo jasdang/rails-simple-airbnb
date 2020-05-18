@@ -1,2 +1,14 @@
-<h1>Flats#show</h1>
-<p>Find me in app/views/flats/show.html.erb</p>
+<div>
+  <h1><%= @flat.name %></h1>
+  <p><%= @flat.address %></p>
+  <h3>A bit more about this flat...</h3>
+  <p><%= @flat.description %></p>
+  <h3>Details</h3>
+  <p><i class="material-icons">person</i><%= @flat.number_of_guests %></p>
+  <p><i class="material-icons">attach_money</i> <%= @flat.price_per_night %></p>
+</div>
+<div>
+  <h5>Book this place!</h5>
+  <!-- Booking -->
+
+</div>
